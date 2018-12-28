@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=750px,user-scalable=no' />
+    <title>立乐教育</title>
+    <!-- <link rel="stylesheet" href="./swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="./style/index.css">
+	<script src='jquery-3.1.1.min.js'></script>
+	<script src='baiduRefer.js'></script>
+	<script src="./swiper/js/swiper.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="//rss.leaplearner.com/assets/act/LLCourse/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="//rss.leaplearner.com/assets/act/LLCourse/css/index.css">
+	<script src='//rss.leaplearner.com/assets/act/LLCourse/js/jquery-3.1.1.min.js'></script>
+	<script src='//rss.leaplearner.com/assets/act/LLCourse/swiper/js/swiper.min.js'></script>
+	<script src='//rss.leaplearner.com/assets/act/LLCourse/js/baiduRefer.js'></script> -->
+<link href="../llcourse/css/ais.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container ">
+        <div class="header">
+            <div class="logo fl">
+                <img src="D:/leaplearner/test/webpackdev/dist/llcourse/images/LOGO.png" alt="">
+            </div>
+            <div class="h_title fl">
+                <span>专注6-18岁青少儿编程教育</span>
+            </div>
+            <div class="h_tel fr">
+                <i></i>
+                <a>400-688-8220</a>
+            </div>
+        </div>
+        <!-- banner图 -->
+        <div class="bigLogo"></div>
+        <!--隐藏的标签 存储uuid-->
+        <span id="useuuid" style="display: none;"></span>
+        <div class="yanz">
+            <!-- 表题 -->
+            <p class="y_p1">现在预约获赠</p>
+            <p class="y_p2">价值<span>299元</span>一对一体验课</p>
+            <!-- 姓名 -->
+            <div class="ver_name">
+                <input type="text" placeholder="请输入孩子姓名" class="input_name inputBox" id="input_name" value="" />
+                <p class="s1" id="s1"></p>
+            </div>
+            <!-- 手机号码 -->
+            <div class="ver_call">
+                <input type="text" placeholder="请输入家长手机号" class="input_call inputBox" id="input_call" value="" />
+                <p class="s1" id="s2"></p>
+            </div>
+            <!-- 验证码 -->
+            <div class="ver_callCode">
+                <input type="text" placeholder="请输入验证码" class="input_callCode inputBox" id="input_callCode" value="" />
+                <p class="s1" id="s3"></p>
+                <!-- 获取验证码 -->
+                <input type="button" style="display: block;outline: none;border: none;" class="codeBtn" id="codeBtn"
+                    value="获取验证码" />
+            </div>
+            <!-- 提交 -->
+            <div class="ver_push" id="pushBtn">
+                <!-- <span>免费领取试听课</span> -->
+            </div>
+            <div class="mb" id="mb"></div>
+        </div>
+        <!-- why study code -->
+        <div class="styCode">
+            <p class="code_title">孩子为什么要学</p><i></i>
+            <span>让兴趣做孩子最好的老师</span>
+            <div class="whyCode"></div>
+        </div>
+        <!-- 趣味 -->
+        <div class="quwei">
+            <p class="code_title">编程课程体系</p><i></i>
+        </div>
+        <!-- 轮播图 -->
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="yuyue"><a id="goTop1">预约试听</a></div><img src='D:/leaplearner/test/webpackdev/dist/llcourse/images/001.png'
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="yuyue"><a id="goTop2">预约试听</a></div><img src='D:/leaplearner/test/webpackdev/dist/llcourse/images/002.png'
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="yuyue"><a id="goTop3">预约试听</a></div><img src='D:/leaplearner/test/webpackdev/dist/llcourse/images/003.png'
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="yuyue"><a id="goTop4">预约试听</a></div><img src='D:/leaplearner/test/webpackdev/dist/llcourse/images/004.png'
+                            alt="">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- <div class="yuyue"><a href="free2.html">预约试听</a></div> -->
+        </div>
+        <!-- ll -->
+        <div class="ll">
+            <p class="code_title">青少儿编程作品集锦</p><i></i>
+        </div>
+        <!-- 视频 -->
+        <div class="llvideo">
+            <div class="video">
+                <video controls poster="D:/leaplearner/test/webpackdev/dist/llcourse/images/poster.JPG">
+                    <source src="D:/leaplearner/test/webpackdev/dist/llcourse/images/leap.mp4">
+                    </source>
+                </video>
+                <div class="play"></div>
+            </div>
+        </div>
+        <!-- 游戏 -->
+        <div class="llgame">
+            <div class="game">
+                <iframe id="code-frame" width="606px" height="360px" style="margin:0px;padding: 0px;"></iframe>
+            </div>
+        </div>
+        <!-- 验证信息 -->
+        <div class="allMsg"></div>
+    </div>
+    <div class="online">
+        <div class="frog"></div>
+        <span id="goTop"></span>
+    </div>
+    <div class="o_zx"></div>
+<script type="text/javascript" src="../llcourse/js/llcourse.b7ae7.js"></script></body>
+
+</html>
+
+<!-- <script>
+    import BaiduRefer from './BaiduRefer.js';
+    // import Swiper from './swiper/swiper.min.js';
+
+    // function showCanvas(code) {
+    //     var content = document.getElementById('code-frame').contentWindow;
+    //     content.document.open();
+    //     content.document.writeln(code);
+    //     content.document.close();
+    // };
+    $(function () {
+        //加载完页面，锁定其高度（防止安卓的键盘压缩页面）
+        var height = document.body.offsetHeight;
+        $('body').height(height);
+
+        // 动态获取来源数据
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return 112
+        };
+        var id = getQueryVariable('id');
+        var tid = getQueryVariable('tid');
+
+
+        if (id != undefined || id != 'undefined') {
+            sourceCode = id
+        };
+        if (tid != undefined || tid != 'undefined') {
+            source3 = tid
+        };
+
+        var swiper = new Swiper('.swiper-container', {
+            // effect : 'fade',
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+
+        $('.play').click(function () {
+            if ($('video')[0].paused) {
+                $("video")[0].play();
+                $(".play").css("display", "none");
+            }
+        });
+        // 游戏部分
+        var workId = 19177,
+            tag = 5;
+        $.ajax({
+            type: "post",
+            url: 'https://code.leaplearner.com/api/work/queryUserWorkById',
+            data: {
+                'workId': workId,
+                'tag': tag
+            },
+            success: function (res) {
+                let data = res.data;
+                if (data != null) {
+                    var code = data.workCode;
+                    // console.log('code = ' + code)
+                    // console.log('scripts = ' + data.scripts);
+                    var doc =
+                        `
+                <html>
+                <body style='margin:0'>
+                ` +
+                        data.scripts +
+                        `<script type="text/javascript">` + code + `<\/script>` + `</body></html>` +
+                        `<script type="text/javascript">
+                    var view = document.getElementsByTagName('canvas')[0];
+                    // parent["xxxx"](view.width, view.height);
+                <\/script>`;
+                    showCanvas(doc);
+                } else {
+                    ///
+                    /*var errorInfo = `<p id="error-text">作品不存在</p>`;
+                    $("body").append(errorInfo);*/
+                    // $(".noFound").show();
+                    // $("#btnEdit").remove();
+
+                }
+            }
+        });
+        // // 获取uuid  载入界面 自动获取ID 写入隐藏span里面
+        // ApiIVerificationCodeForg2();
+        // function ApiIVerificationCodeForg2(callback) {
+        //     $.ajax({
+        //         url: "http://www.leaplearner.com/backend/OfficialWebsite/IAcquirePCode.do",
+        //         type: "get",
+        //         dataType: "json",
+        //         crossDomain: true,
+        //         success: function(data) {
+        //             $('#useuuid').text(data.data)
+        //         }
+        //     })
+        // }
+
+        // 验证名字
+        var flagName = null;
+        $("#input_name").blur(function () {
+            // var reg=/^[a-zA-Z\d\_\u2E80-\u9FFF]{0,16}$/
+            var reg = /^[\u4E00-\u9FA5A-Za-z]+$/;
+            var str = $("#input_name").val();
+            if (reg.test(str)) {
+                flagName = true;
+                $("#s1").html("");
+            } else {
+                flagName = false;
+                $("#s1").html("请输入正确姓名");
+            }
+            if ($("#input_name").val() == "") {
+                $("#s1").html("");
+            }
+        });
+
+        //  验证手机
+        var flagCall = null;
+        $("#input_call").blur(function () {
+            var reg = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(14[0-9]{1})|(18[0-9]{1}))+\d{8})$/
+            var str = $("#input_call").val();
+            if (reg.test(str)) {
+                flagCall = true;
+                $("#s2").html("");
+            } else {
+                flagCall = false;
+                $("#s2").html("请输入有效手机号");
+            }
+            if ($("#input_call").val() == "") {
+                $("#s2").html("");
+            }
+        });
+
+        var flagCode = null;
+        $("#input_callCode").blur(function () {
+            var reg = /^\d{6}$/
+            var str = $("#input_callCode").val();
+            if (reg.test(str)) {
+                flagCode = true;
+                $("#s3").html("");
+            } else {
+                flagCode = false;
+                $("#s3").html("正确输入验证码");
+            }
+            if ($("#input_callCode").val() == "") {
+                $("#s3").html("");
+            }
+        });
+
+
+        // 验证全部 并返回布尔值
+        function checkForm() {
+            if (flagName && flagCall && flagCode) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        //点击按钮获取验证码
+        $("#codeBtn").click(function () {
+            if (flagCall) {
+                ApiIAcquireVCode($("#input_call").val(), $("#useuuid").text());
+                start_sms($("#codeBtn"));
+            } else {
+                $("#s2").html("请输入有效手机号");
+            }
+        });
+
+        // 提示信息
+        function m_alert() {
+            $("#mb").show();
+            var hideTimer;
+            clearTimeout(hideTimer);
+            hideTimer = setTimeout(function () { //提示隐藏
+                $("#mb").hide().html("");
+                clearTimeout(hideTimer);
+            }, 2000);
+        };
+        $("#goTop").click(function () {
+            window.scrollTo(0, 250);
+            $('.online').css('display', 'none')
+        });
+        $("#pushBtn").on("click", function () {
+            checkForm()
+            if (checkForm()) {
+                var referArr = BaiduRefer();
+                var user = {
+                    "parentsName": $("#input_name").val(), //名字
+                    "phone": $("#input_call").val(), //手机号
+                    "verificationCode": $("#input_callCode").val(), //验证码
+                    "sourceCode": sourceCode,
+                    "source3": source3,
+                    "sem_id": referArr.keywordidStr,
+                    "sem_str": referArr.decodeURIStr,
+                    "address": referArr.address,
+                }
+                //数据传送
+                $.ajax({
+                    url: "http://act-tst.service.leaplearner.com/leap-activity/weixin/frequencykeSpread",
+                    // url:"//act.leaplearner.com/leap-activity/weixin/frequencykeSpread",
+                    type: "post",
+                    dataType: "json",
+                    data: user,
+                    success: function (data) {
+                        //console.log(data);
+                        if (data.code == 10000) {
+                            //提示成功
+                            // $("#mb").text("感谢您的关注！立乐专员将在2个工作日内给您致电，沟通上课时间等事宜");
+                            // $('#pushBtn')[0].disabled = true;		//按钮禁止点击
+                            // $("#mb").show();
+                            // $("#input_name").val("");
+                            // $("#input_call").val("");
+                            // $("#input_callCode").val("");
+                            // var hideTimer;
+                            // clearTimeout(hideTimer);
+                            // hideTimer = setTimeout(function(){	  //提示隐藏
+                            // 	$("#mb").hide().html("");
+                            // 	$('#pushBtn')[0].disabled = false;
+                            // 	clearTimeout(hideTimer);
+                            // },3500);
+
+                            window.location.href = "./successful.html";
+                        } else if (data.code == 10001) {
+                            $("#mb").text("请求失败，请重新输入");
+                            m_alert();
+                        } else if (data.code == 10009) {
+                            $("#mb").text("验证码有误，请重新输入");
+                            m_alert();
+                        } else if (data.code == 10008) {
+                            $("#mb").text("您已预约，请耐心等待课程顾问与您联系。");
+                            $("#input_name").val("");
+                            $("#input_call").val("");
+                            $("#input_callCode").val("");
+                            m_alert();
+                        } else {
+                            $("#mb").text("服务器繁忙，请稍后再试");
+                            m_alert();
+                        }
+                    }
+                })
+            } else {
+                if ($("#input_name").val() == "" && $("#input_call").val() == "" && $("#input_callCode")
+                    .val() == "") {
+                    $("#mb").html("请正确填写所有信息")
+                    m_alert();
+                } else if (!flagName || $("#input_name").val() == "") { //内容为空 或者 格式不对时，出现提示
+                    $("#mb").html("包含汉字、字母或空格，最长16个字符");
+                    m_alert();
+                    console.log(1)
+                } else if (!flagCall || $("#input_call").val() == "") {
+                    $("#mb").html("请输入有效手机号");
+                    m_alert();
+                    console.log(2)
+                } else if (!flagCode || $("#input_callCode").val() == "") {
+                    $("#mb").html("正确输入验证码");
+                    m_alert();
+                    console.log(3)
+                }
+            }
+        });
+
+        //获取验证码
+        function ApiIAcquireVCode(account, uuid) {
+            $.ajax({
+                // url: "http://www.leaplearner.com/backend/OfficialWebsite/IAcquireVCode.do",
+                url: '//act-tst.service.leaplearner.com/leap-activity/sms/IAcquireVCode',
+                // url: '//act.leaplearner.com/leap-activity/sms/IAcquireVCode',
+                type: "post",
+                dataType: "json",
+                data: {
+                    account: account
+                },
+                success: function (data) {}
+            })
+        };
+
+        //验证码倒计时
+        function start_sms(obj) {
+            var count = 1;
+            var sum = 60;
+            var i = setInterval(function () {
+                if (count > 60) {
+                    obj.attr('disabled', false);
+                    obj.val('发送验证码');
+                    obj.css("background-color", "#ffba00");
+                    clearInterval(i);
+                } else {
+                    obj.val('剩余' + parseInt(sum - count) + '秒');
+                    obj.attr('disabled', true);
+                    obj.css("background-color", "#ccc");
+                }
+                count++;
+            }, 1000);
+        };
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > '1354') {
+                $('.online').css('display', 'block')
+            } else {
+                $('.online').css('display', 'none')
+            }
+        });
+        // 页面跳转后在返回能跳转到当前的位置
+        //    var str = window.location.href;
+        // str = str.substring(str.lastIndexOf("/") + 1);
+        // if ($.cookie(str)) {
+        // $("html,body").animate({ scrollTop: 0 }, 1000);
+        // }
+        // $(window).scroll(function(){
+        // 	var str = window.location.href;
+        // 	str = str.substring(str.lastIndexOf("/") + 1);
+        // 	var top = $(document).scrollTop();
+        // 	$.cookie(str, top, {path:"/"});
+        // 	return $.cookie(str)
+        // })
+
+        // 在线咨询
+        $(".o_zx").click(function () {
+            _MEIQIA('showPanel');
+        });
+
+    });
+</script>
+<script type='text/javascript'>
+    ;
+    (function (m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 73420);
+    _MEIQIA('withoutBtn');
+    _MEIQIA('init')
+    //  _MEIQIA('manualInit');
+</script>
+<script>
+    var _hmt = _hmt || [];;
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?851b37a76201a575748cbd69b4a00af8";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script> -->

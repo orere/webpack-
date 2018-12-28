@@ -1,0 +1,50 @@
+[
+    {
+        "name":"pc1",
+        "entry":{
+            "pc1": "./src/pages/pc1/app.js"
+        },
+        "htmlList":[{
+            "chunks":["pc1"],
+            "title":"pc1",
+            "template": "src/pages/pc1/index.html",
+            "filename": "./pc1/index.html"
+        }]
+    },
+    {
+        "name":"pc2",
+        "entry":{
+            "pc2": "./src/pages/pc2/app.js"
+        },
+        "htmlList":[{
+            "chunks":["pc2"],
+            "title":"pc2",
+            "template": "src/pages/pc2/index.html",
+            "filename": "./pc2/index.html"
+        }]
+    },
+    {
+        "name":"ll",
+        "entry":{
+            "ll": "./src/pages/ll/app.js"
+        },
+        "htmlList":[{
+            "chunks":["ll"],
+            "title":"ll",
+            "template": "src/pages/ll/index.html",
+            "filename": "./ll/index.html"
+        },
+        {
+            "chunks":[],
+            "title":"ll",
+            "template": "src/pages/ll/successful.html",
+            "filename": "./ll/successful.html"
+        },
+        {
+            "chunks":[],
+            "title":"ll",
+            "template": "src/pages/ll/detail.html",
+            "filename": "./ll/detail.html"
+        }]
+    }
+]
